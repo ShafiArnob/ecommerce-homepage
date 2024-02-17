@@ -25,7 +25,8 @@ const Navbar = () => {
 
       {/* account section */}
       <div className={styles.account}>
-        <div className="flex">
+        {/* account section 1 */}
+        <div className={styles.account_section1}>
           <FiRefreshCw />
           <FaRegHeart />
           <div>
@@ -33,10 +34,13 @@ const Navbar = () => {
           </div>
         </div>
 
-        <div className={`flex`}>
+        {/* account section 2 */}
+        <div className={styles.account_section2}>
           <p>Account</p>
-          <FaRegUser />
-          <p>$20.00</p>
+          <div className="icon-color-primary">
+            <FaRegUser />
+          </div>
+          <p style={{ fontSize: "1.2rem" }}>$20.00</p>
         </div>
       </div>
     </div>
