@@ -33,6 +33,11 @@
   align-items: center;
 }
 
+/* text color */
+.text-color-primary {
+  color: var(--primary-color);
+}
+
 /* icon color */
 .icon-color-primary {
   color: var(--primary-color);
