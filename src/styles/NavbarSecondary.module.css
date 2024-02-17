@@ -1,0 +1,62 @@
+:root {
+  --primary-color: rgb(0, 136, 221);
+  --primary-color-lite: rgb(0, 136, 221, 0.8);
+  --text-gray-dark: rgb(107 114 128);
+  --text-gray-mid: rgb(156 163 175);
+  --text-gray-lite: rgb(209 213 219);
+  --text-dark-dark: rgb(17 24 39);
+  --text-dark-mid: rgb(31 41 55);
+  --text-dark-lite: rgb(55 65 81);
+  --text-lite-white: #fff;
+  --border-gray-lite: rgb(209 213 219);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 48px;
+  background-color: var(--primary-color);
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: var(--text-lite-white);
+}
+
+.navLeft {
+  flex: 1;
+  display: flex;
+  padding: 0 1.4rem;
+  /* background-color: red; */
+}
+
+.navLeft p {
+  margin-left: 0.8rem;
+}
+
+.navRight {
+  display: flex;
+  flex: 2;
+  justify-content: space-between;
+  padding: 0 1rem;
+}
+
+.navRight p:hover {
+  cursor: pointer;
+  color: rgb(243 244 246);
+}
+
+.navRight select {
+  margin-left: 4px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-size: 0.9rem;
+  color: var(--text-lite-white);
+
+  /* color: var(--text-gray-dark); */
+}
+
+.navRight select:hover {
+  cursor: pointer;
+  color: rgb(243 244 246);
+}

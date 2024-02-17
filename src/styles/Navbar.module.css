@@ -1,0 +1,106 @@
+:root {
+  --primary-color: rgb(0, 136, 221);
+  --primary-color-lite: rgb(0, 136, 221, 0.8);
+  --text-gray-dark: rgb(107 114 128);
+  --text-gray-mid: rgb(156 163 175);
+  --text-gray-lite: rgb(209 213 219);
+  --text-dark-dark: rgb(17 24 39);
+  --text-dark-mid: rgb(31 41 55);
+  --text-dark-lite: rgb(55 65 81);
+  --border-gray-lite: rgb(209 213 219);
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 68px;
+}
+
+/** logo */
+.logo {
+  flex: 1;
+}
+
+/** search */
+.search_container {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: red; */
+}
+
+.search {
+  /* display: inline-block; */
+  width: 83.333%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: blue; */
+  padding: 0.2rem;
+  border: 1px solid var(--border-gray-lite);
+  border-radius: 4px;
+}
+
+.search input {
+  width: 100%;
+  padding: 6px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+}
+
+.search select {
+  margin-left: 4px;
+  outline: none;
+  border: none;
+  color: var(--text-gray-dark);
+}
+
+.search .btn_primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 18px;
+  outline: none;
+  border: none;
+  padding: 8px;
+  color: white;
+  border-radius: 4px;
+  background-color: var(--primary-color);
+}
+
+.btn_primary:hover {
+  cursor: pointer;
+  background-color: var(--primary-color-lite);
+}
+
+/** account */
+.account {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: aqua; */
+}
+
+.account_section1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 40%;
+  font-size: 1.1rem;
+  color: var(--text-gray-dark);
+  /* background-color: red; */
+}
+
+.account_section2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 50%;
+  font-size: 0.9rem;
+  font-weight: 600;
+  /* background-color: blue; */
+  color: var(--text-dark-mid);
+}
