@@ -1,0 +1,63 @@
+:root {
+  --primary-color: rgb(0, 136, 221);
+  --primary-color-lite: rgb(0, 136, 221, 0.8);
+  --text-gray-dark: rgb(107 114 128);
+  --text-gray-mid: rgb(156 163 175);
+  --text-gray-lite: rgb(209 213 219);
+  --text-dark-dark: rgb(17 24 39);
+  --text-dark-mid: rgb(31 41 55);
+  --text-dark-lite: rgb(55 65 81);
+  --text-lite-white: #fff;
+  --border-gray-lite: rgb(209 213 219);
+}
+
+.heroSection {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+/* categories component */
+.heroCategories {
+  width: 24%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid var(--border-gray-lite);
+  border-radius: 4px;
+  /* padding: 1rem; */
+}
+
+.category {
+  /* background-color: red; */
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1rem;
+  color: var(--text-dark-mid);
+  font-weight: 600;
+  border-bottom: 1px solid var(--border-gray-lite);
+}
+
+.category:hover {
+  cursor: pointer;
+  background-color: #e9f6ff;
+  color: var(--primary-color);
+}
+
+.category:last-child {
+  border-bottom: none;
+}
+
+.category p {
+  /* padding: 1rem; */
+}
+
+.categorySelected {
+  background-color: #e9f6ff;
+  color: var(--primary-color);
+}
+
+.heroBanner {
+  width: 74%;
+}
