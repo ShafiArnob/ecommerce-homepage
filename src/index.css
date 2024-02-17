@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  /* justify-items: center; */
+  /* max-width: 1188px; */
+  width: 83.333%;
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.center {
+  justify-items: center;
+  align-items: center;
+}
+
+
+/* test */
+.bg-red {
+  background-color: red;
+}
