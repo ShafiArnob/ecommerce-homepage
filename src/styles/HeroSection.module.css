@@ -102,6 +102,11 @@
   background-color: var(--primary-color);
 }
 
+.heroText div:hover {
+  cursor: pointer;
+  background-color: var(--primary-color-lite);
+}
+
 .heroImgContainer {
   /* width: 55%; */
   flex: 1;
