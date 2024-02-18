@@ -1,0 +1,66 @@
+:root {
+  --primary-color: rgb(0, 136, 221);
+  --primary-color-lite: rgb(0, 136, 221, 0.8);
+  --text-gray-dark: rgb(107 114 128);
+  --text-gray-mid: rgb(156 163 175);
+  --text-gray-lite: rgb(209 213 219);
+  --text-dark-dark: rgb(17 24 39);
+  --text-dark-mid: rgb(31 41 55);
+  --text-dark-lite: rgb(55 65 81);
+  --text-lite-white: #fff;
+  --border-gray-lite: rgb(209 213 219);
+}
+
+.discountSection {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 24%);
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+/* discount card */
+.discountCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.6rem;
+  border-radius: 8px;
+  background-color: #eff9ff;
+}
+
+.discountCard p,
+.discountCard h2,
+.discountCard button {
+  margin-bottom: 0.5rem;
+}
+
+.discountCard:nth-child(even) {
+  background-color: #fff8f0;
+}
+
+.cardText p {
+  font-size: 12px;
+  color: var(--text-gray-dark);
+}
+
+.cardText h2 {
+  /* font-size: 12px; */
+  color: var(--text-dark-mid);
+}
+
+.cardText button {
+  border: none;
+  font-size: 14px;
+  background-color: transparent;
+  color: #dc2626;
+}
+
+.cardText button span {
+  margin-left: 0.4rem;
+  text-decoration: underline;
+}
+
+.discountCard .cardImg img {
+  max-width: 160px;
+  /* height: 20px; */
+}
