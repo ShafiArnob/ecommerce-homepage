@@ -1,3 +1,16 @@
+:root {
+  --primary-color: rgb(0, 136, 221);
+  --primary-color-lite: rgb(0, 136, 221, 0.8);
+  --text-gray-dark: rgb(107 114 128);
+  --text-gray-mid: rgb(156 163 175);
+  --text-gray-lite: rgb(209 213 219);
+  --text-dark-dark: rgb(17 24 39);
+  --text-dark-mid: rgb(31 41 55);
+  --text-dark-lite: rgb(55 65 81);
+  --text-lite-white: #fff;
+  --border-gray-lite: rgb(209 213 219);
+}
+
 .productsSection {
   display: flex;
   justify-content: space-between;
@@ -6,5 +19,22 @@
 
 .products {
   width: 74%;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
+}
+
+.productsHeaderContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-dark-mid);
+}
+
+.productsHeaderIconContainer {
+  font-size: 1.2rem;
+  color: var(--text-gray-mid);
+}
+
+.productsHeaderIconContainer>svg:hover {
+  cursor: pointer;
+  color: var(--primary-color);
 }

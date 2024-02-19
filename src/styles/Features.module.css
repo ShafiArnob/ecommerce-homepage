@@ -34,8 +34,12 @@
   /* background-color: red; */
 }
 
-.featureCardTextContainer>* {
-  margin-bottom: 0.5rem;
+.featureCardTextContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+  /* margin-bottom: 0.5rem; */
 }
 
 .featureCardTextContainer h3 {
