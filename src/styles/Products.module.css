@@ -1,0 +1,10 @@
+.productsSection {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+
+.products {
+  width: 74%;
+  background-color: aquamarine;
+}
