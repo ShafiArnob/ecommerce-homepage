@@ -3,6 +3,7 @@ import DiscountSection from "./components/DiscountSection";
 import HeroSection from "./components/HeroSection";
 import Navbar from "./components/Navbar";
 import NavbarSecondary from "./components/NavbarSecondary";
+import { ProductsSection } from "./components/ProductsSection";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <NavbarSecondary />
       <HeroSection />
       <DiscountSection />
+      <ProductsSection />
     </Container>
   );
 }
