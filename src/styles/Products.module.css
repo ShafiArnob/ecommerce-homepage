@@ -38,3 +38,35 @@
   cursor: pointer;
   color: var(--primary-color);
 }
+
+/** products */
+.productsContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  justify-content: space-between;
+  /* background-color: aquamarine; */
+}
+
+/** product card */
+.productCard {
+  display: inline-block;
+  overflow: hidden;
+}
+
+.productCardImgContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(247, 247, 247);
+  border-radius: 8px;
+  height: 220px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+.productCardImgContainer img {
+  /* width: 360px; */
+  width: 100%;
+  height: auto;
+}
