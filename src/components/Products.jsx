@@ -5,6 +5,7 @@ import { GoArrowLeft } from "react-icons/go";
 import { getAllProducts } from "../api/products";
 import { RiStarSFill } from "react-icons/ri";
 import { calculateDiscountedPrice } from "../utils/currency";
+import { MoonLoader } from "react-spinners";
 const Products = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -22,7 +23,7 @@ const Products = () => {
     };
     fetchUsers();
   }, []);
-  console.log(products);
+  // console.log(products);
   return (
     <div className={styles.products}>
       <div className={styles.productsHeaderContainer}>
@@ -33,10 +34,23 @@ const Products = () => {
         </div>
       </div>
       <div className={styles.productsContainer}>
-        {products.map((product) => (
-          <ProductCard key={product?.id} product={product} />
-        ))}
+        {!loading &&
+          products.map((product) => (
+            <ProductCard key={product?.id} product={product} />
+          ))}
       </div>
+      {loading && (
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            width: "100%",
+          }}
+        >
+          {" "}
+          <MoonLoader color="rgb(0, 136, 221)" cssOverride={{}} size={60} />
+        </div>
+      )}
     </div>
   );
 };
